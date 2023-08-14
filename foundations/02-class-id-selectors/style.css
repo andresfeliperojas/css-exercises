@@ -1,0 +1,19 @@
+.oddnumber {
+    background-color: salmon;
+    font-family: Verdana, DejaVu Sans, sans-serif;
+}
+
+#se {
+    color: blue;
+    font-size: 36px;
+}
+
+.te {
+    font-size: 24px;
+}
+
+#fe {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
