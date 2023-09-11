@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  /* this makes it show vertically */
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +19,8 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  /* this makes more space around the text */
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +29,56 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul {
+  /* this makes the bullet points dissapear */
+  list-style: none;
+  /* this makes the links horizontal NOT stacked */
+  display: flex;
+  /* gap puts spacing between the links */
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+
+}
+
+/* this makes the underline from the links dissapear */
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  /* this makes the links go to the left and right of the screen */
+  justify-content: space-between;
+  /* this makes more space around the text */
+  padding: 16px;
+
+}
+
+.footer {
+  display: flex;
+  /* this makes footer section stand out as an actual section */
+  background: #eee;
+  /* this makes the links go to the left and right of the screen */
+  justify-content: space-between;
+  /* this makes more space around the text */
+
+  padding: 16px;
+
+}
+
+.content {
+  display: flex;
+  /* this makes the content have most of the space given to it pushing the header and footer to their respective location */
+  flex: 1;
+  /* this makes the content vertical/stacked */
+  flex-direction: column;
+  /* this will make the content come to the middle of the screen */
+  align-items: center;
+  justify-content: center;
+  /* spaces out the things in content */
+  gap: 16px;
+
 }
